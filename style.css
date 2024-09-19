@@ -1,0 +1,148 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(#caf0f8, #000814);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Navigation */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.title {
+    color: #f8f9fa;
+    font-size: 30px;
+    text-shadow: 1px 1px 5px #000000;
+    margin: 0;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+}
+
+ul li {
+    margin-left: 30px;
+}
+
+ul li a {
+    color: #f8f9fa;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 10px;
+}
+
+ul li a:hover {
+    color: #ffdd00;
+    text-shadow: 1px 1px 10px #000814;
+    text-decoration: underline;
+}
+
+/* Movie Details Section */
+.details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 30px 0;
+}
+
+.post {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    text-decoration: none;
+}
+
+.post img {
+    height: 400px;
+    width: 100%;
+    max-width: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.post h2 {
+    color: #ffffff;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .nav {
+        padding: 15px 30px;
+    }
+
+    .title {
+        font-size: 28px;
+    }
+
+    ul li a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .title {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    ul li a {
+        font-size: 16px;
+    }
+
+    .details {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .post img {
+        height: 350px;
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 20px;
+    }
+
+    ul li a {
+        font-size: 14px;
+    }
+
+    .post img {
+        height: 250px;
+    }
+
+    .post h2 {
+        font-size: 16px;
+    }
+}

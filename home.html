@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Freaks Treat</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #1b262c;
+            color: #f1f1f1;
+        }
+
+        .header {
+            background-color: #0f4c75;
+            padding: 40px;
+            text-align: center;
+            color: #bbe1fa;
+        }
+
+        .header h1 {
+            font-size: 3.5rem;
+            letter-spacing: 4px;
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            color: #bbe1fa;
+        }
+
+        .main-content {
+            text-align: center;
+            padding: 40px;
+        }
+
+        .main-content h2 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            color: #0f4c75;
+        }
+
+        .movies-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 30px;
+        }
+
+        .movie {
+            background-color: #3282b8;
+            margin: 20px;
+            border-radius: 15px;
+            width: 300px;
+            overflow: hidden;
+            transition: transform 0.3s;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .movie:hover {
+            transform: scale(1.05);
+        }
+
+        .movie img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+
+        .movie h3 {
+            font-size: 1.8rem;
+            padding: 20px;
+            margin: 0;
+            color: #f1f1f1;
+        }
+
+        .movie p {
+            font-size: 1rem;
+            padding: 0 20px 20px;
+        }
+
+        .updates-section {
+            margin-top: 50px;
+        }
+
+        .updates-section h2 {
+            font-size: 2.5rem;
+            color: #0f4c75;
+        }
+
+        .updates {
+            padding: 0 30px;
+        }
+
+        .update-item {
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: #bbe1fa;
+            color: #1b262c;
+            border-radius: 10px;
+        }
+
+        .update-item h3 {
+            margin: 0;
+            font-size: 1.5rem;
+        }
+
+        .update-item p {
+            margin-top: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .movies-section {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Welcome to Movie Freaks Treat!</h1>
+        <p>Your ultimate destination for iconic movie dialogues and updates about the Hollywood world.</p>
+    </div>
+
+    <div class="main-content">
+        <h2>Famous Movie Dialogues</h2>
+        <div class="movies-section">
+            <!-- Movie 1: Pulp Fiction -->
+            <div class="movie">
+                <img src="Resource/Pulp Fiction.jpeg" alt="Pulp Fiction">
+                <h3>Pulp Fiction</h3>
+                <p><i>"Say 'what' again, I dare you, I double dare you!" - Jules Winnfield</i></p>
+            </div>
+
+            <!-- Movie 2: Fight Club -->
+            <div class="movie">
+                <img src="Resource/Fight club.jpg" alt="Fight Club">
+                <h3>Fight Club</h3>
+                <p><i>"The first rule of Fight Club is: You do not talk about Fight Club." - Tyler Durden</i></p>
+            </div>
+
+            <!-- Movie 3: Star Wars: The Empire Strikes Back -->
+            <div class="movie">
+                <img src="Resource/Star wars.jpg" alt="Star Wars">
+                <h3>Star Wars: The Empire Strikes Back</h3>
+                <p><i>"No, I am your father." - Darth Vader</i></p>
+            </div>
+
+            <!-- Movie 4: Gladiator -->
+            <div class="movie">
+                <img src="Resource/Gladiator.jpeg" alt="Gladiator">
+                <h3>Gladiator</h3>
+                <p><i>"Are you not entertained?" - Maximus</i></p>
+            </div>
+
+            <!-- Movie 5: The Matrix -->
+            <div class="movie">
+                <img src="Resource/Matrix.jpg" alt="The Matrix">
+                <h3>The Matrix</h3>
+                <p><i>"There is no spoon." - Neo</i></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="updates-section">
+        <h2>Latest Updates</h2>
+        <div class="updates">
+            <div class="update-item">
+                <h3>Upcoming Sci-Fi Blockbuster 'Interstellar 2' Announced</h3>
+                <p>Christopher Nolan's highly anticipated sequel to 'Interstellar' is set to release next year, continuing the journey of exploration beyond the stars.</p>
+            </div>
+
+            <div class="update-item">
+                <h3>'Avatar: The Way of Water' Hits $2 Billion at the Box Office</h3>
+                <p>James Cameron's latest visual masterpiece has officially crossed the $2 billion mark, becoming one of the highest-grossing films of all time.</p>
+            </div>
+
+            <div class="update-item">
+                <h3>Marvel's 'Avengers: Secret Wars' Set for 2026</h3>
+                <p>The Marvel Cinematic Universe gears up for its biggest crossover event yet, with heroes from across the multiverse facing their most dangerous threat.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

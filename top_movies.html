@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 5 Movies</title>
+    <link rel="icon" href="Resource/top10.png">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #d8f3dc;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Title Styling */
+        .title {
+            font-family: 'Verdana', Geneva, Tahoma, sans-serif;
+            text-align: center;
+            color: #01161e;
+            padding: 20px;
+            text-shadow: 1px 1px 5px #000000;
+            font-size: 36px;
+        }
+
+        /* Movie Item Styling */
+        .item {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 50px auto;
+            max-width: 1200px;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .item img {
+            flex: 1;
+            max-width: 40%;
+            height: auto;
+            border-radius: 20px;
+            margin-right: 20px;
+            box-shadow: 2px 3px 10px #000000;
+        }
+
+        .text {
+            flex: 2;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 10px;
+        }
+
+        .text h1 {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 28px;
+            color: #01161e;
+        }
+
+        .text p {
+            font-size: 18px;
+            color: #01161e;
+            line-height: 1.6;
+        }
+
+        .dialogue {
+            font-style: italic;
+            font-size: 20px;
+            color: #555555;
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 1200px) {
+            .item {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .item img {
+                margin-bottom: 20px;
+                max-width: 90%;
+            }
+
+            .text h1 {
+                font-size: 26px;
+            }
+
+            .text p {
+                font-size: 16px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .item {
+                margin: 30px auto;
+                padding: 15px;
+            }
+
+            .text h1 {
+                font-size: 24px;
+            }
+
+            .text p {
+                font-size: 16px;
+            }
+
+            .dialogue {
+                font-size: 18px;
+            }
+
+            .title {
+                font-size: 32px;
+                padding: 15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .item {
+                flex-direction: column;
+                padding: 10px;
+            }
+
+            .item img {
+                max-width: 100%;
+                margin: 0 auto 20px auto;
+            }
+
+            .text h1 {
+                font-size: 22px;
+            }
+
+            .text p {
+                font-size: 14px;
+            }
+
+            .dialogue {
+                font-size: 16px;
+            }
+
+            .title {
+                font-size: 28px;
+                padding: 10px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1 class="title">TOP 5 MOVIES</h1>
+
+    <div class="item">
+        <img src="Resource/the shawshank redemption.jpg" alt="The Shawshank Redemption">
+        <div class="text">
+            <h1>1. The Shawshank Redemption</h1>
+            <p class="dialogue">Get busy living, or get busy dying.</p>
+            <p>Andy Dufresne, a successful banker, is arrested for the murders of his wife and her lover, and is sentenced to life imprisonment at the Shawshank prison. He becomes the most unconventional prisoner.</p> 
+        </div>
+    </div>
+
+    <div class="item">
+        <img src="Resource/the godfather.jpg" alt="The Godfather">
+        <div class="text">
+            <h1>2. The Godfather</h1>
+            <p class="dialogue">Don't Tell Me You're Innocent.</p>
+            <p>Don Vito Corleone, head of a mafia family, decides to hand over his empire to his youngest son, Michael. However, his decision unintentionally puts the lives of his loved ones in grave danger.</p> 
+        </div>
+    </div>
+
+    <div class="item">
+        <img src="Resource/the dark knight.jpg" alt="The Dark Knight">
+        <div class="text">
+            <h1>3. The Dark Knight</h1>
+            <p class="dialogue">Why so Serious?</p>
+            <p>Batman has a new foe, the Joker, who is an accomplished criminal hell-bent on decimating Gotham City. Together with Gordon and Harvey Dent, Batman struggles to thwart the Joker before it is too late.</p> 
+        </div>
+    </div>
+
+    <div class="item">
+        <img src="Resource/12 Angry Men.jpg" alt="12 Angry Men">
+        <div class="text">
+            <h1>4. 12 Angry Men</h1>
+            <p class="dialogue">If you want to vote not guilty, then do it because you're convinced the man is not guilty - not because you've had enough.</p>
+            <p>An eighteen-year-old Latino is accused of having stabbed his father to death. He is presented in a courtroom before a twelve-man jury. Eleven out of the twelve men vote guilty, except for Mr. Davis.</p> 
+        </div>
+    </div>
+
+    <div class="item">
+        <img src="Resource/Schindler's List.jpg" alt="Schindler's List">
+        <div class="text">
+            <h1>5. Schindler's List</h1>
+            <p class="dialogue">Power - is when we have every justification to kill, and we don't.</p>
+            <p>Oscar Schindler, a successful and narcissistic German businessman, slowly starts worrying about the safety of his Jewish workforce after witnessing their persecution in Poland during World War II.</p> 
+        </div>
+    </div>
+
+</body>
+</html>
